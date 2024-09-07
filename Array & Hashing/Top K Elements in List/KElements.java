@@ -35,7 +35,7 @@ public class KElements {
         Scanner sc = new Scanner(System.in);
         Solution obj = new Solution();
         int tc = sc.nextInt();
-        while(tc > 0) {
+        while(tc-- > 0) {
             int n = sc.nextInt();
             int nums[] = new int[n];
             for(int i = 0; i < n; i++) {
@@ -47,7 +47,6 @@ public class KElements {
                 System.out.printf("%d ", x);
             }
             System.out.println();
-            tc--;
         }
         sc.close();
     }

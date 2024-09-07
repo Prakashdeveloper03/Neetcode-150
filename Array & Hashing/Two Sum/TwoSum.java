@@ -19,7 +19,7 @@ public class TwoSum {
         Scanner sc = new Scanner(System.in);
         Solution obj = new Solution();
         int tc = sc.nextInt();
-        while(tc > 0) {
+        while(tc-- > 0) {
             int n = sc.nextInt();
             int nums[] = new int[n];
             for(int i = 0; i < n; i++) {
@@ -31,7 +31,6 @@ public class TwoSum {
                 System.out.printf("%d ", x);
             }
             System.err.println();
-            tc--;
         }
         sc.close();
     }

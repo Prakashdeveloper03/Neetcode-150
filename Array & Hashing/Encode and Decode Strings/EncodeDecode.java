@@ -31,7 +31,7 @@ public class EncodeDecode {
         Scanner sc = new Scanner(System.in);
         Solution obj = new Solution();
         int tc = sc.nextInt();
-        while (tc > 0) {
+        while (tc-- > 0) {
             int n = sc.nextInt();
             sc.nextLine();
             List<String> strs = new ArrayList<>();
@@ -44,7 +44,6 @@ public class EncodeDecode {
                 System.out.print(str + " ");
             }
             System.out.println();
-            tc--;
         }
         sc.close();
     }

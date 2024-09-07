@@ -20,14 +20,13 @@ public class Duplicate {
         Scanner sc = new Scanner(System.in);
         Solution obj = new Solution();
         int tc = sc.nextInt();
-        while(tc > 0) {
+        while(tc-- > 0) {
             int n = sc.nextInt();
             int nums[] = new int[n];
             for(int i = 0; i < n; i++) {
                 nums[i] = sc.nextInt();
             }
             System.out.println(obj.hasDuplicate(nums));
-            tc--;
         }
         sc.close();
     }

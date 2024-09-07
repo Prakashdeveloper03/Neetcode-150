@@ -28,11 +28,10 @@ public class Anagram {
         Solution obj = new Solution();
         int tc = sc.nextInt();
         sc.nextLine();
-        while(tc > 0) {
+        while(tc-- > 0) {
             String s = sc.nextLine();
             String t = sc.nextLine();
             System.out.println(obj.isAnagram(s, t));
-            tc--;
         }
         sc.close();
     }
