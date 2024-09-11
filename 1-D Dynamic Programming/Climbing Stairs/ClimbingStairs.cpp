@@ -1,22 +1,21 @@
 #include <iostream>
 using namespace std;
 class Solution {
-public:
-    int climbStairs(int n) {
-        if(n < 0) return 0;
-        if(n == 0) return 1;
-        if(n == 1) return 1;
-        if(n == 2) return 2;
-        int n1 = 1, n2 = 2, current;
-        for(int i = 2; i < n; i++) {
-            current = n1 + n2;
-            n1 = n2;
-            n2 = current;
-        }
-        return current;
+ public:
+  int climbStairs(int n) {
+    if (n < 0) return 0;
+    if (n == 0) return 1;
+    if (n == 1) return 1;
+    if (n == 2) return 2;
+    int n1 = 1, n2 = 2, current;
+    for (int i = 2; i < n; i++) {
+      current = n1 + n2;
+      n1 = n2;
+      n2 = current;
     }
+    return current;
+  }
 };
-
 
 int main() {
   Solution obj;
